@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.hiden{
+    display: none;
+}
+
+#header{
+    margin: 20px;
+
+}
+
+#header .user-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+#header .user-action .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    overflow: hidden;
+
+}
+#header .user-action .user-short-info{
+    display: flex;
+    align-items: center;
+}
+
+#header .user-action .user-short-info span{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#header .user-action .avatar img{
+    max-width: 50px;
+    min-height: 50px;
+}
+
+#header .user-action .logout{
+    background-color: rgb(20, 76, 229);
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffff;
+}
+
+#header .user-action .logout:hover{
+    background-color: rgba(255, 0, 0, 0.688);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#header .line{
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+#header .nav{
+    display: flex;
+}
+#header .nav button{
+    width: 25%;
+    border: none;
+    min-height: 40px;
+    
+}
+
+#header .nav button:hover{
+    background-color: rgb(83, 99, 141);
+    color: #ffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#header .nav .active{
+    background-color: rgb(20, 76, 229);
+    color: #ffff;
+}
+
+#header .tabcontent{
+    display: none;
+}
+
+
+/* user */
+
+
+.my-user{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.avatar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.action img{
+    transform: rotate(90deg);
+    width: 20px;
+    position: relative;
+}
+
+.user{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.user .user-info-short{
+    display: flex;
+    align-items: center;
+}
+
+.user .user-info-short .user-info{
+    margin-left: 20px;
+}
+
+.user .user-info .user-name span{
+    font-weight: 700;
+}
+
+.user .drop-down-content{
+    background-color: rgb(39, 88, 179);
+    color: #f5f5f5;
+    padding: 10px;
+    position: absolute;
+    width: 150px;
+    min-height: 80px;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.user .drop-down-content .item-menu{
+    padding: 10px;
+    /* cursor: pointer; */
+}
+.user .drop-down-content .item-menu:hover{
+    cursor: pointer;
+    background-color: rgba(204, 204, 204, 0.444);
+}
+/* form login */
+
+#login {
+    background-color: #f5f5f5;
+    min-height: 700px;
+    margin-top: 0px;
+    display: flex;
+}
+
+#login .container{
+    margin:50px auto;
+    max-height: 500px;
+    background-color: #fff;
+    width: 40%;
+    box-shadow: 5px 5px 5px #ccc;
+    border-radius: 5px;
+
+}
+
+#login .container .title{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#login .container .title span{
+    
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#login .container .form-login{
+    margin-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+
+#login .container .form-login label{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#login .container .form-login input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+#login .container .action{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#login .container .action button{
+    padding: 10px;
+    width: 40%;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #ccc;
+    cursor: pointer;
+}
+
+#login .container .login-button button{
+
+    background-color: rgba(0, 0, 255, 0.774);
+
+}
+
+#login .container .foget-password a{
+    margin:15px 0 0 0;
+    cursor: pointer;
+    color: blue;
+    display: block;
+    text-decoration: none;
+}
+
+#login .container .foget-password a:hover{
+    text-decoration: underline;
+}
+
+#login .line{
+    border-bottom: 1px solid blue;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#login .container .register-button button{
+
+    background-color: rgb(3, 194, 3);
+
+}
+
+
+/* form register */
+#register {
+    background-color: #f5f5f5;
+    min-height: 700px;
+    margin-top: 0px;
+    display: flex;
+}
+
+#register .container{
+    margin:50px auto;
+    max-height: 600px;
+    background-color: #fff;
+    width: 40%;
+    box-shadow: 5px 5px 5px #ccc;
+    border-radius: 5px;
+
+}
+
+#register .container .title{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#register .container .title span{
+    
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#register .container .form-register{
+    margin-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+
+#register .container .form-register label{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#register .container .form-register input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+#register .container .action{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#register .container .action button{
+    padding: 10px;
+    width: 50%;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #ccc;
+    cursor: pointer;
+}
+
+#register .container .login-button button{
+
+    background-color: rgba(0, 0, 255, 0.774);
+
+}
+
+#register .container .foget-password a{
+    margin:15px 0 0 0;
+    cursor: pointer;
+    color: blue;
+    display: block;
+    text-decoration: none;
+}
+
+#register .container .foget-password a:hover{
+    text-decoration: underline;
+}
+
+#register .line{
+    border-bottom: 1px solid blue;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#register .container .register-button button{
+
+    background-color: rgb(3, 194, 3);
+
+}
